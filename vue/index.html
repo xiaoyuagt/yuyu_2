@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue.js第一个demo</title>
+</head>
+<body>
+    <!-- view层HTML代码 -->
+	<div id="app">
+	  {{message}}
+	</div>
+	
+	<script src="js/vue.js"></script>
+	<script>
+	//Model层js代码
+	new Vue({
+          el:"#app",
+          data:{
+          	message:'Hello World'
+          }
+	});
+
+	</script>
+</body>
+</html>

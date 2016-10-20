@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue.js第一个demo</title>
+	 <script src="http://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+</head>
+<body>
+    <!-- view层HTML代码 -->
+	<div id="app">
+	  <p>{{*message}}</p>
+	  <p>{{message }}</p>
+	  <input v-model="message">
+	</div>
+	<script>
+	//Model层js代码
+	new Vue({
+          el:"#app",
+          data:{
+          	message:'Hello World'
+          }
+	});
+
+	</script>
+</body>
+</html>

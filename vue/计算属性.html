@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue.js第一个demo</title>
+	 <script src="js/vue.js"></script>
+</head>
+<body>
+    <!-- view层HTML代码 -->
+	<div id="example">
+     a={{ a }}, b={{ b }}
+    </div>
+	<script>
+	//Model层js代码
+		var vm = new Vue({
+		  el: '#example',
+		  data: {
+		    a: 1
+		  },
+		  computed: {
+		    // 一个计算属性的 getter
+		    b: function () {
+		      // `this` 指向 vm 实例
+              console.log(this instanceof Object)
+              console.log(this)
+		      return this.a + 1
+		    }
+		  }
+	})
+
+	</script>
+</body>
+</html>
